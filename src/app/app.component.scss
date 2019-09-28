@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.count {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row nowrap;
+  button {
+    background: mediumaquamarine;
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    & + button {
+      margin-left: 1rem;
+    }
+    &:hover {
+      background: darken(mediumaquamarine, 30%);
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
